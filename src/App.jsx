@@ -82,7 +82,6 @@ export default function App() {
       </Link>
     </div>
 
-    {/* THIS IS REQUIRED */}
     <Navbar RouteData={routesList || []} />
     <AllRoutes RouteData={routesList} />
 
