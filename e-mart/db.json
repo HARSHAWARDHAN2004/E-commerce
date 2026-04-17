@@ -1,0 +1,97 @@
+{
+  "AllProduct": {
+    "Electronics": [
+      {
+        "id": 1,
+        "name": "Smartphone",
+        "price": 15000,
+        "image": "https://s.alicdn.com/@sc04/kf/H75373ed3c5f34019bc16273fa95b69a6L/Original-I16-Phone.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Headphones",
+        "price": 1200,
+        "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGMiEUgh8rewSFarKpYPAcKEcMUfGQxCnC3_BDCyj3fszmjOAGsgPhFPKXtssaZMEN7cFYUzsBzk0EBuhdT1rVJyF0aQ7eRv4Ohx4U6laz"
+      }
+    ],
+
+    "DailyNeeds": [
+      {
+        "id": 3,
+        "name": "Toothpaste",
+        "price": 120,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7yY6ehCULxunCGwUre4_lCVjGeLI-w57kTQ"
+      }
+    ],
+
+    "FruitsVegetables": [
+      {
+        "id": 4,
+        "name": "Apple",
+        "price": 120,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVgc8Z4MuUUMZRdNf0qGvDgWu016u02ARw"
+      }
+    ],
+
+    "Clothes": [
+      {
+        "id": 5,
+        "name": "Men T-Shirt",
+        "price": 499,
+        "image": "https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85/lifestyle.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Women Dress",
+        "price": 1299,
+        "image": "https://mahezon.in/cdn/shop/files/IMG-20241126.jpg"
+      }
+    ],
+
+    "Grains": [
+      {
+        "id": 7,
+        "name": "Rice",
+        "price": 60,
+        "image": "https://rukmini1.flixcart.com/image/rice.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Wheat Flour",
+        "price": 45,
+        "image": "https://image.cdn.shpy.in/atta.jpg"
+      }
+    ]
+  },
+
+  "Users": [
+    {
+      "id": 101,
+      "name": "Rahul Sharma",
+      "email": "rahul@gmail.com",
+      "password": "rahul123",
+      "cart": [
+        { "productId": 1, "quantity": 1 }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Priya Verma",
+      "email": "priya@gmail.com",
+      "password": "priya123",
+      "cart": [
+        { "productId": 4, "quantity": 2 }
+      ]
+    }
+  ],
+
+  "Admin": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "superadmin"
+    }
+  ]
+}
