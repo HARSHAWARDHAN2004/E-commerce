@@ -1,0 +1,80 @@
+
+.addCardContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  padding: 20px;
+}
+
+
+.addCardForm {
+  width: 420px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-top: 5px solid #fdd835;
+  transition: 0.3s ease;
+}
+
+
+.addCardForm:hover {
+  transform: translateY(-3px);
+}
+
+
+.addCardForm label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.addCardForm input,
+.addCardForm select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+
+.addCardForm input:focus,
+.addCardForm select:focus {
+  border-color: #fdd835;
+  box-shadow: 0 0 0 3px rgba(253, 216, 53, 0.25);
+}
+
+
+.addCardForm input[type="submit"] {
+  width: 100%;
+  background: #fdd835;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addCardForm input[type="submit"]:hover {
+  background: #fbc02d;
+  transform: scale(1.02);
+}
+
+
+@media (max-width: 500px) {
+  .addCardForm {
+    width: 100%;
+  }
+}
