@@ -1,0 +1,511 @@
+{
+  "AllProduct": [
+    {
+      "id": "1",
+      "name": "iphone",
+      "price": 150000,
+      "rating": 4.8,
+      "image": "https://s.alicdn.com/@sc04/kf/H75373ed3c5f34019bc16273fa95b69a6L/Original-I16-Phone.jpg",
+      "category": "Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Headphones",
+      "price": 1200,
+      "rating": 4.2,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGMiEUgh8rewSFarKpYPAcKEcMUfGQxCnC3_BDCyj3fszmjOAGsgPhFPKXtssaZMEN7cFYUzsBzk0EBuhdT1rVJyF0aQ7eRv4Ohx4U6laz",
+      "category": "Electronics"
+    },
+    {
+      "id": "1776434558853",
+      "name": "KOTTY Women Solid Puffer Jacket",
+      "price": 52006,
+      "rating": 4,
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/6/q/a/s-1-no-kttpufferjacket137-kotty-original-imah7d27skgzrnzg.jpeg?q=70",
+      "category": "Electronics"
+    },
+    {
+      "id": "101",
+      "name": "Samsung Galaxy S23",
+      "price": 85000,
+      "rating": 4.6,
+      "image": "https://images.indianexpress.com/2023/10/samsung-galaxy-s23-fe-review-featured.jpg?w=1200",
+      "category": "Electronics"
+    },
+    {
+      "id": "102",
+      "name": "Bluetooth Speaker",
+      "price": 2500,
+      "rating": 4.1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVNyioguh69cR6n-eI-W9upwgA_Mp1xE5vw&s",
+      "category": "Electronics"
+    },
+    {
+      "id": "103",
+      "name": "Smart Watch",
+      "price": 3500,
+      "rating": 4.3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aa1c77oxoS6mc2tm_ZTuDPQLzm7KatmuEw&s",
+      "category": "Electronics"
+    },
+    {
+      "id": "104",
+      "name": "Laptop",
+      "price": 75000,
+      "rating": 4.5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMF6empznXfJrj6wtfspcViV69ug38x5RBQ&s",
+      "category": "Electronics"
+    },
+    {
+      "id": "105",
+      "name": "Gaming Mouse",
+      "price": 1500,
+      "rating": 4.4,
+      "image": "https://rukminim2.flixcart.com/image/480/640/ky1vl3k0/mouse/m/q/m/2-4ghz-rechargeable-wireless-gaming-mouse-x8-professional-gaming-original-imagad723mv9vxyz.jpeg?q=90",
+      "category": "Electronics"
+    },
+    {
+      "id": "3",
+      "name": "Toothpaste",
+      "price": 120,
+      "rating": 4.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7yY6ehCULxunCGwUre4_lCVjGeLI-w57kTQ",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "1776422715681",
+      "name": "Shampoo",
+      "price": 180,
+      "rating": 4.4,
+      "image": "https://img3.exportersindia.com/product_images/bc-full/2019/9/6108019/oriental-princess-reapiar-and-rescue-sampoo-online-1568972221-5088748.jpeg",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "201",
+      "name": "Soap",
+      "price": 40,
+      "rating": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYlD9g04Swodq7DC0LQu-_T0liTjT7xdvgg&s",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "202",
+      "name": "Detergent Powder",
+      "price": 220,
+      "rating": 4.3,
+      "image": "https://www.bbassets.com/media/uploads/p/l/266951_16-surf-excel-quick-wash-detergent-powder.jpg",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "203",
+      "name": "Dish Wash Liquid",
+      "price": 90,
+      "rating": 4.1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2H7lv2EceRtAnabFnKQf0PyE6-UAdR3OB4w&s",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "204",
+      "name": "Toilet Cleaner",
+      "price": 110,
+      "rating": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_zsQHIvf7IFlW432lnYzDHDoT1tkGrFM7_g&s",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "205",
+      "name": "Hand Wash",
+      "price": 80,
+      "rating": 4.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKd2OG346xzBfCTgvEV-w4AEtOxfP4uZsq3g&s",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "206",
+      "name": "Room Freshener",
+      "price": 150,
+      "rating": 4.3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJc5BKW8phaRCOxHpkkisr5I-LKrK3f3e_w&s",
+      "category": "DailyNeeds"
+    },
+    {
+      "id": "4",
+      "name": "Apple",
+      "price": 120,
+      "rating": 4.5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVgc8Z4MuUUMZRdNf0qGvDgWu016u02ARw",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "1776422759828",
+      "name": "Banana",
+      "price": 60,
+      "rating": 4.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT70VoSpyJt31CdA0VvqupZiTvmCk46Hf2qcg&s",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "301",
+      "name": "Orange",
+      "price": 80,
+      "rating": 4.3,
+      "image": "https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "302",
+      "name": "Tomato",
+      "price": 40,
+      "rating": 4.1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2-wGkyyHymPzZyVJp0RCrZoq8CWR0dsAlg&s",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "303",
+      "name": "Potato",
+      "price": 30,
+      "rating": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMczDskgSvh04T753Ts-W4V-sg52KcUQPDkA&s",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "304",
+      "name": "Carrot",
+      "price": 50,
+      "rating": 4.2,
+      "image": "https://www.debon.co.in/cdn/shop/products/Carrot-English.jpg?v=1672122214",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "305",
+      "name": "Mango",
+      "price": 100,
+      "rating": 4.7,
+      "image": "https://www.paperandtea.com/cdn/shop/articles/Mango_6fb74c95-c9b0-4559-88e8-f542e6d6b18d.jpg?v=1769533193&width=1024",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "306",
+      "name": "Grapes",
+      "price": 90,
+      "rating": 4.4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZmybVvkYFtE_4jQtcgoYKcCH0E2IsSFaEug&s",
+      "category": "FruitsVegetables"
+    },
+    {
+      "id": "5",
+      "name": "Men T-Shirt",
+      "price": 499,
+      "rating": 4.3,
+      "image": "https://images.meesho.com/images/products/314890756/im8xn_512.webp?width=512",
+      "category": "Clothes"
+    },
+    {
+      "id": "6",
+      "name": "Women Dress",
+      "price": 1299,
+      "rating": 4.6,
+      "image": "https://ordermefirst.in/cdn/shop/files/WhatsAppImage2024-07-19at2.12.26AM.jpg?v=1721335900&width=1445",
+      "category": "Clothes"
+    },
+    {
+      "id": "401",
+      "name": "Men Jeans",
+      "price": 999,
+      "rating": 4.2,
+      "image": "https://i.shgcdn.com/5eb9ad3a-ccbf-4976-a0f3-3bdae63d6fde/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
+      "category": "Clothes"
+    },
+    {
+      "id": "402",
+      "name": "Women Kurti",
+      "price": 799,
+      "rating": 4.5,
+      "image": "https://maabetii.com/cdn/shop/files/EmbroideredMulCottonKurtiSet-02.jpg?v=1748684019",
+      "category": "Clothes"
+    },
+    {
+      "id": "403",
+      "name": "Hoodie",
+      "price": 1199,
+      "rating": 4.4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8JXikhc5aYtj-EhPEqiYck4tfEYycxqAKw&s",
+      "category": "Clothes"
+    },
+    {
+      "id": "404",
+      "name": "Jacket",
+      "price": 1599,
+      "rating": 4.6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatFkk9K-vva8z_MyUl25gVB5TsWvQ4SEkFg&s",
+      "category": "Clothes"
+    },
+    {
+      "id": "405",
+      "name": "Sweater",
+      "price": 899,
+      "rating": 4.3,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20241104/ppOP/6727f928f9b8ef490bfd25b0/-473Wx593H-700680372-green-MODEL.jpg",
+      "category": "Clothes"
+    },
+    {
+      "id": "406",
+      "name": "Shorts",
+      "price": 399,
+      "rating": 4.1,
+      "image": "https://nobero.com/cdn/shop/files/WebImagesNew5_4e1b8dd6-766a-48f4-a1e9-0b32860473fc.webp?v=1749108621",
+      "category": "Clothes"
+    },
+    {
+      "id": "7",
+      "name": "Rice",
+      "price": 60,
+      "rating": 4.3,
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPzK7PhZuQlU2kOKjo8_7TASVqH6TtwFU5HrBq_8L3Kg23J-uDp3H71zv7mizJA24ppH5Y3yQzYg8idBB0Q3Y3niDqIg-Fm8q8QS7HO3zV5Ekcyp2m2RDRrvN2HI4tg89o_z9XSw&usqp=CAc.",
+      "category": "Grains"
+    },
+    {
+      "id": "8",
+      "name": "Wheat Flour",
+      "price": 45,
+      "rating": 4.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdb2rznXAzkseQdJHKCctblDmoq-ZJaHRlA&s",
+      "category": "Grains"
+    },
+    {
+      "id": "501",
+      "name": "Basmati Rice",
+      "price": 120,
+      "rating": 4.6,
+      "image": "https://dookan.com/cdn/shop/files/India_Gate_Premium_Basmati_Rice_1kg_-500px_2_8aaad10b-14e8-498a-a547-e01e9f3194db.png?v=1755865087&width=1445",
+      "category": "Grains"
+    },
+    {
+      "id": "502",
+      "name": "Corn Flour",
+      "price": 70,
+      "rating": 4.1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7pwhH--J-W7rZ308SCJQukSGCnApe-2asQ&s",
+      "category": "Grains"
+    },
+    {
+      "id": "503",
+      "name": "Oats",
+      "price": 150,
+      "rating": 4.4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fMFbHbCJmfBEvUdye6UcFdO7UOQ-rKHC0g&s",
+      "category": "Grains"
+    },
+    {
+      "id": "504",
+      "name": "Lentils",
+      "price": 90,
+      "rating": 4.3,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/8/331591272/EX/VY/YC/146735887/500gm-red-lentils-500x500.jpeg",
+      "category": "Grains"
+    },
+    {
+      "id": "505",
+      "name": "Barley",
+      "price": 85,
+      "rating": 4.2,
+      "image": "https://rukmini1.flixcart.com/image/1500/1500/xif0q/grain-millet/y/s/e/300-raw-barley-seeds-jau-300g-1-barley-hansi-original-imagzy8vsgkuv2jn.jpeg?q=70",
+      "category": "Grains"
+    },
+    {
+      "id": "506",
+      "name": "Millet",
+      "price": 95,
+      "rating": 4.4,
+      "image": "https://m.media-amazon.com/images/I/71oFyO3BMiL._AC_UF894,1000_QL80_.jpg",
+      "category": "Grains"
+    }
+  ],
+  "Orders": [
+    {
+      "id": "aXzADYAYAVQ",
+      "name": "Apple",
+      "price": 120,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVgc8Z4MuUUMZRdNf0qGvDgWu016u02ARw",
+      "time": "4/18/2026, 8:26:27 AM",
+      "status": "Placed"
+    },
+    {
+      "id": "uGVZIR_nvYc",
+      "name": "Rice",
+      "price": 60,
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPzK7PhZuQlU2kOKjo8_7TASVqH6TtwFU5HrBq_8L3Kg23J-uDp3H71zv7mizJA24ppH5Y3yQzYg8idBB0Q3Y3niDqIg-Fm8q8QS7HO3zV5Ekcyp2m2RDRrvN2HI4tg89o_z9XSw&usqp=CAc.",
+      "time": "4/19/2026, 7:01:16 PM",
+      "status": "Placed"
+    }
+  ],
+  "Users": [
+    {
+      "id": "101",
+      "name": "Rahul Sharma",
+      "email": "rahul@gmail.com",
+      "password": "rahul123",
+      "cart": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Priya Verma",
+      "email": "priya@gmail.com",
+      "password": "priya123",
+      "cart": [
+        {
+          "productId": 4,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Harsh",
+      "email": "harsh@gmail.com",
+      "password": "asdfgh",
+      "cart": [],
+      "id": "UcIRLfXxcEI"
+    },
+    {
+      "name": "Harsh",
+      "email": "harsh@gmail.com",
+      "password": "asdfgh",
+      "cart": [],
+      "id": "HI2c3yymaoA"
+    },
+    {
+      "name": "Piyush",
+      "email": "piyush@gmail.com",
+      "password": "zxcvb",
+      "cart": [],
+      "id": "I2BBUBbpOPk"
+    }
+  ],
+  "Admin": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+  "History": [
+    {
+      "id": "_NOQbEHl_9s",
+      "name": "iphone",
+      "price": 150000,
+      "image": "https://s.alicdn.com/@sc04/kf/H75373ed3c5f34019bc16273fa95b69a6L/Original-I16-Phone.jpg",
+      "time": "4/17/2026, 8:24:56 PM"
+    },
+    {
+      "id": "thIF9xb-M3E",
+      "name": "iphone",
+      "price": 150000,
+      "image": "https://s.alicdn.com/@sc04/kf/H75373ed3c5f34019bc16273fa95b69a6L/Original-I16-Phone.jpg",
+      "time": "4/17/2026, 8:24:57 PM"
+    },
+    {
+      "id": "mks_uGItO18",
+      "name": "Apple",
+      "price": 120,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVgc8Z4MuUUMZRdNf0qGvDgWu016u02ARw",
+      "quantity": 1,
+      "time": "4/17/2026, 8:34:14 PM"
+    },
+    {
+      "id": "_7ITBUK3EdE",
+      "name": "Apple",
+      "price": 120,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVgc8Z4MuUUMZRdNf0qGvDgWu016u02ARw",
+      "quantity": 1,
+      "time": "4/17/2026, 8:34:14 PM"
+    },
+    {
+      "id": "SbtZYBkMswA",
+      "name": "Apple",
+      "price": 120,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQVgc8Z4MuUUMZRdNf0qGvDgWu016u02ARw",
+      "quantity": 1,
+      "time": "4/17/2026, 8:34:16 PM"
+    },
+    {
+      "id": "hf_EAeS0PM0",
+      "name": "Headphones",
+      "price": 1200,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGMiEUgh8rewSFarKpYPAcKEcMUfGQxCnC3_BDCyj3fszmjOAGsgPhFPKXtssaZMEN7cFYUzsBzk0EBuhdT1rVJyF0aQ7eRv4Ohx4U6laz",
+      "time": "4/17/2026, 8:53:55 PM"
+    },
+    {
+      "id": "f1oUCG05w5g",
+      "name": "KOTTY Women Solid Puffer Jacket",
+      "price": 52006,
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/6/q/a/s-1-no-kttpufferjacket137-kotty-original-imah7d27skgzrnzg.jpeg?q=70",
+      "time": "4/17/2026, 8:59:00 PM"
+    },
+    {
+      "id": "7jkMX1zEzNA",
+      "name": "KOTTY Women Solid Puffer Jacket",
+      "price": 420,
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/9/a/o/xl-1-no-kdgybg-zip-kbjacket-kelonbro-resized-2-original-imahgg8ssemrrfdw.jpeg?q=70",
+      "time": "4/17/2026, 9:02:50 PM"
+    },
+    {
+      "id": "kiH9l5ITZR8",
+      "name": "Headphones",
+      "price": 1200,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGMiEUgh8rewSFarKpYPAcKEcMUfGQxCnC3_BDCyj3fszmjOAGsgPhFPKXtssaZMEN7cFYUzsBzk0EBuhdT1rVJyF0aQ7eRv4Ohx4U6laz",
+      "time": "4/17/2026, 9:12:02 PM"
+    },
+    {
+      "id": "mf15Fev703M",
+      "name": "Samsung Galaxy S23",
+      "price": 85000,
+      "image": "https://images.indianexpress.com/2023/10/samsung-galaxy-s23-fe-review-featured.jpg?w=1200",
+      "time": "4/18/2026, 6:03:39 AM"
+    },
+    {
+      "id": "XC5HhXU85bc",
+      "name": "Headphones",
+      "price": 1200,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGMiEUgh8rewSFarKpYPAcKEcMUfGQxCnC3_BDCyj3fszmjOAGsgPhFPKXtssaZMEN7cFYUzsBzk0EBuhdT1rVJyF0aQ7eRv4Ohx4U6laz",
+      "time": "4/18/2026, 4:18:43 PM"
+    },
+    {
+      "id": "zElS2DVHBe4",
+      "name": "Headphones",
+      "price": 1200,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSGMiEUgh8rewSFarKpYPAcKEcMUfGQxCnC3_BDCyj3fszmjOAGsgPhFPKXtssaZMEN7cFYUzsBzk0EBuhdT1rVJyF0aQ7eRv4Ohx4U6laz",
+      "time": "4/18/2026, 4:18:51 PM"
+    },
+    {
+      "id": "oAM6Bd9Sb7U",
+      "name": "Bluetooth Speaker",
+      "price": 2500,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVNyioguh69cR6n-eI-W9upwgA_Mp1xE5vw&s",
+      "time": "4/19/2026, 7:00:44 PM"
+    },
+    {
+      "id": "PuuT8w8RR98",
+      "name": "Rice",
+      "price": 60,
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPzK7PhZuQlU2kOKjo8_7TASVqH6TtwFU5HrBq_8L3Kg23J-uDp3H71zv7mizJA24ppH5Y3yQzYg8idBB0Q3Y3niDqIg-Fm8q8QS7HO3zV5Ekcyp2m2RDRrvN2HI4tg89o_z9XSw&usqp=CAc.",
+      "time": "4/19/2026, 7:01:07 PM"
+    },
+    {
+      "id": "y-_3LsbA0h4",
+      "name": "Basmati Rice",
+      "price": 120,
+      "rating": 4.6,
+      "image": "https://dookan.com/cdn/shop/files/India_Gate_Premium_Basmati_Rice_1kg_-500px_2_8aaad10b-14e8-498a-a547-e01e9f3194db.png?v=1755865087&width=1445",
+      "category": "Grains",
+      "time": "4/19/2026, 7:25:53 PM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

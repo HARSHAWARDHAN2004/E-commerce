@@ -1,0 +1,55 @@
+/* COMMON */
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+/* BUTTON GROUP */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* DIFFERENT BUTTON COLORS */
+.login-btn {
+  background: #007bff;
+  color: white;
+}
+.login-btn:hover {
+  background: #0056b3;
+}
+
+.register-btn {
+  background: #6f42c1;
+  color: white;
+}
+.register-btn:hover {
+  background: #4e2ca3;
+}
+
+.user-btn {
+  background: #28a745;
+  color: white;
+}
+.user-btn:hover {
+  background: #1e7e34;
+}
+
+.admin-btn {
+  background: #dc3545;
+  color: white;
+}
+.admin-btn:hover {
+  background: #a71d2a;
+}
