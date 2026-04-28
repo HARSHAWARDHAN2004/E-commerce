@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
-import "../style/Search.css"
+// import "../style/Search.css"
 
 export default function Search() {
 
   const location = useLocation()
-  const query = new URLSearchParams(location.search).get("q")
 
+  const [query, setQuery] = useState("")
   const [products, setProducts] = useState([])
   const [filtered, setFiltered] = useState([])
 
+  // GET QUERY FROM URL
+  useEffect(() => {
+    const q = new URLSearchParams(location.search).get("q")
+    setQuery(q || "")
+  }, [location.search])
+
+  // FETCH PRODUCTS
   useEffect(() => {
     getProducts()
   }, [])
@@ -24,6 +31,7 @@ export default function Search() {
     }
   }
 
+  // FILTER PRODUCTS
   useEffect(() => {
     if (!query) return
 
@@ -34,6 +42,7 @@ export default function Search() {
     setFiltered(result)
   }, [query, products])
 
+  // ADD TO CART
   async function addToCart(item) {
     await fetch("http://localhost:3000/History", {
       method: "POST",
@@ -45,6 +54,7 @@ export default function Search() {
         time: new Date().toLocaleString()
       })
     })
+
     alert("Added to Cart")
   }
 

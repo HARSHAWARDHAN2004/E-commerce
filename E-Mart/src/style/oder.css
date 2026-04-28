@@ -1,47 +1,141 @@
+/* PAGE */
 .orders-page {
-  padding: 20px;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #f6f9fc, #eef3f8);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
+
+/* TITLE */
 .orders-title {
   text-align: center;
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #222;
+}
+
+
+/* TOTAL */
+.orders-total {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c831f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* GRID */
+.orders-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+
+/* CARD */
+.orders-card {
+  padding: 16px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* CARD HOVER */
+.orders-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* IMAGE */
+.orders-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.orders-card:hover img {
+  transform: scale(1.06);
+}
+
+
+/* PRODUCT TEXT */
+.orders-card h4 {
+  font-size: 15px;
+  margin: 10px 0 5px;
+  color: #222;
+  font-weight: 600;
+}
+
+.orders-card p {
+  font-size: 14px;
+  color: #666;
   margin-bottom: 10px;
 }
 
-.orders-total {
-  text-align: center;
-  margin-bottom: 20px;
-  color: green;
-}
 
-.orders-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.orders-card {
-  width: 250px;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  background: white;
-  text-align: center;
-}
-
-.orders-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
+/* DELETE BUTTON */
 .delete-btn {
   margin-top: 10px;
-  padding: 8px;
-  background: red;
+  padding: 9px 12px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff4d4d, #e53935);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+
+/* BUTTON HOVER */
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(229, 57, 53, 0.3);
+}
+
+
+/* BUTTON CLICK */
+.delete-btn:active {
+  transform: scale(0.96);
+}
+
+
+/* OPTIONAL STATUS BADGE */
+.orders-card::before {
+  content: "Delivered";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0c831f;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.4px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .orders-title {
+    font-size: 22px;
+  }
+
+  .orders-total {
+    font-size: 16px;
+  }
 }

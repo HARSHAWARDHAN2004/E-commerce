@@ -20,21 +20,21 @@ import UserOrder from './Editor/UserOrder'
 
 
 export default function Admin() {
-      let routesList = [
-          { path: "/", title: "Home", element: <Home /> },
-          { path: "/clothes", title: "Clothes", element: <Clothes /> },
-          { path: "/electronics", title: "Electronics", element: <Electronic /> },
-          { path: "/daily", title: "Daily Needs", element: <Dailyneeds /> },
-          { path: "/fruits", title: "Fruits & Vegetables", element: <FruitandVeg /> },
-          { path: "/grains", title: "Grains", element: <Grains /> },
-         
-          {path:"edit", title:"Edit_Data", element:<ShowCard/>},
-           {path: "/add", title: "Add_Data", element: <AddCard/>},
-           { path: "/userhistory", title: "User_Cart(History)", element: <UserHistory/> },
-           { path: "/totaluser", title: "Userdetail", element: <TotalUsers/> },
-            { path: "/userorder", title: "UserOrder", element: <UserOrder/> },
-         
-        ]
+     let routesList = [
+  { path: "/", title: "Home", element: <Home /> },
+  { path: "/clothes", title: "Clothes", element: <Clothes /> },
+  { path: "/electronics", title: "Electronics", element: <Electronic /> },
+  { path: "/daily", title: "Daily Needs", element: <Dailyneeds /> },
+  { path: "/fruits", title: "Fruits & Vegetables", element: <FruitandVeg /> },
+  { path: "/grains", title: "Grains", element: <Grains /> },
+
+  
+  { path: "/edit", title: "Edit_Data", element: <ShowCard/> },
+  { path: "/add", title: "Add_Data", element: <AddCard/> },
+  { path: "/userhistory", title: "User_Cart(History)", element: <UserHistory/> },
+  { path: "/totaluser", title: "Userdetail", element: <TotalUsers/> },
+  { path: "/userorder", title: "UserOrder", element: <UserOrder/> },
+]
    return (
       <div >
       <Navabar RouteData={routesList}/>

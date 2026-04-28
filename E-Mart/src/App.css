@@ -1,55 +1,119 @@
-/* COMMON */
-.container {
+/* APP WRAPPER */
+.app {
+  width: 100%;
   min-height: 100vh;
-  padding: 20px;
+  transition: 0.3s ease;
+}
+
+/* LIGHT MODE */
+.app.light {
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* DARK MODE */
+.app.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* ROOT */
+#root {
+  width: 100%;
+}
+
+/* FULL WIDTH CONTAINER */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+}
+
+/* SEARCH */
+.search-bar {
+  width: 100%;
+}
+
+/* CATEGORY NAV */
+.category-nav {
+  width: 100%;
+}
+
+/* CAROUSEL */
+.carousel {
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* HOME */
+.home {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+/* GRID */
+.card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  column-gap: 20px;
+  row-gap: 35px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
   transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* BUTTON GROUP */
-.button-group {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+.app.dark .card {
+  background: #1e1e1e;
 }
 
-.btn {
-  padding: 10px 16px;
+/* BUTTON */
+.add-btn {
+  width: 100%;
+  padding: 8px;
+  background: #ff9f00;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
 }
 
-/* DIFFERENT BUTTON COLORS */
-.login-btn {
-  background: #007bff;
+/* DARK MODE BUTTON */
+.app.dark .add-btn {
+  background: #ff7a00;
   color: white;
-}
-.login-btn:hover {
-  background: #0056b3;
-}
-
-.register-btn {
-  background: #6f42c1;
-  color: white;
-}
-.register-btn:hover {
-  background: #4e2ca3;
-}
-
-.user-btn {
-  background: #28a745;
-  color: white;
-}
-.user-btn:hover {
-  background: #1e7e34;
-}
-
-.admin-btn {
-  background: #dc3545;
-  color: white;
-}
-.admin-btn:hover {
-  background: #a71d2a;
 }

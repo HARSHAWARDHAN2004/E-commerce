@@ -1,117 +1,100 @@
-import React, { useContext, useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import '../style/navabar.css'
+import React, { useContext, useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import "../style/navabar.css";
 
-import { TemplatesCon } from "../Context/Templates"
-import { AuthicationCon } from "../Context/Authication"
+import { TemplatesCon } from "../Context/Templates";
+import { AuthicationCon } from "../Context/Authication";
+import Logout from "./Logout";
 
 export default function Navbar({ RouteData }) {
+  const { value, changetheme } = useContext(TemplatesCon);
+  const { isAuth } = useContext(AuthicationCon);
 
-  let { value, changetheme } = useContext(TemplatesCon)
-  let { isAuth, setAuth } = useContext(AuthicationCon)
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  let themeText = value ? "Light Mode" : "Dark Mode"
-  let authText = isAuth ? "Logout" : "Login"
-
-  let [cartCount, setCartCount] = useState(0)
-
-  let [search, setSearch] = useState("")
-  let navigate = useNavigate()
+  const [cartCount, setCartCount] = useState(0);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
-    getCart()
-
-    let interval = setInterval(() => {
-      getCart()
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [])
+    getCart();
+  }, []);
 
   async function getCart() {
     try {
-      let res = await fetch("http://localhost:3000/History")
-      let data = await res.json()
-
-      setCartCount(Array.isArray(data) ? data.length : 0)
+      let res = await fetch("http://localhost:3000/History");
+      let data = await res.json();
+      setCartCount(Array.isArray(data) ? data.length : 0);
     } catch (error) {
-      console.log("Cart fetch error:", error)
-      setCartCount(0)
+      console.log(error);
     }
   }
 
   function handleSearch() {
-    if (search.trim()) {
-      navigate(`/search?q=${search}`)
-    }
+    if (!search.trim()) return;
+    navigate(`/search?q=${search}`);
+    setSearch("");
   }
 
   return (
     <>
+      {/* TOP NAV */}
       <div className="top-nav">
 
-        <div className="logo">E-Mart</div>
+        {/* LOGO */}
+        <div className="logo" onClick={() => navigate("/")}>
+          🛍️ E-Mart
+        </div>
 
+        {/* SEARCH */}
         <div className="search-box">
           <input
             type="text"
-            placeholder="Search in E-Mart"
+            placeholder="Search products..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleSearch()
-            }}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
           />
-          <button onClick={handleSearch}>Search</button>
+          <button onClick={handleSearch}>🔍</button>
         </div>
 
+        {/* RIGHT NAV */}
         <div className="right-nav">
 
+          {/* THEME BUTTON */}
           <button
+            className="theme-btn"
             onClick={() => changetheme(!value)}
-            style={{
-              padding: "10px 16px",
-              marginRight: "10px",
-              border: "none",
-              borderRadius: "6px",
-              cursor: "pointer",
-              backgroundColor: value ? "#ffcc00" : "#333",
-              color: value ? "#000" : "#fff",
-              fontWeight: "bold",
-              transition: "0.3s"
-            }}
           >
-            {themeText}
+            {value ? "🌙 Dark" : "☀️ Light"}
           </button>
 
-          <button
-            onClick={() => setAuth(prev => !prev)}
-            style={{
-              padding: "10px 16px",
-              border: "none",
-              borderRadius: "6px",
-              cursor: "pointer",
-              backgroundColor: authText === "Login" ? "#28a745" : "#dc3545",
-              color: "white",
-              fontWeight: "bold",
-              transition: "0.3s"
-            }}
-          >
-            {authText}
-          </button>
+          {/* AUTH */}
+          {isAuth && <Logout />}
 
-          <Link to="/history">🛒 Cart ({cartCount})</Link>
+          {/* CART */}
+          <Link to="/history" className="cart-link">
+            🛒
+            <span className="cart-badge">{cartCount}</span>
+          </Link>
 
         </div>
       </div>
 
+      {/* BOTTOM NAV */}
       <div className="bottom-nav">
         {(RouteData || []).map((el, i) => (
-          <Link key={i} to={el.path}>
+          <Link
+            key={i}
+            to={el.path}
+            className={
+              location.pathname === el.path ? "active" : ""
+            }
+          >
             {el.title}
           </Link>
         ))}
       </div>
     </>
-  )
+  );
 }

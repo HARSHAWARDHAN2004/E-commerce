@@ -7,7 +7,7 @@ export default function Dailyneeds() {
 
   const { products } = useContext(AllProductCon)
 
-
+  //  Filter only Daily Needs
   const dailyData = products.filter(
     item => item.category === "DailyNeeds"
   )

@@ -7,7 +7,7 @@ export default function Electronic() {
 
   const { products } = useContext(AllProductCon)
 
-
+  //  Filter only Electronics
   const electronicData = products.filter(
     item => item.category === "Electronics"
   )

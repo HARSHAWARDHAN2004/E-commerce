@@ -1,55 +1,67 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import "../style/Login.css";
+import { AuthicationCon } from "../Context/Authication";
+import '../style/Login.css'
 
 export default function Login() {
-  let [email, setEmail] = useState("");
-  let [password, setPassword] = useState("");
-
+  const { setAuth } = useContext(AuthicationCon);
   const navigate = useNavigate();
+
+  const [user, setUser] = useState({
+    email: "",
+    password: ""
+  });
+
+ 
+  function handleChange(e) {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  }
 
   async function handleLogin(e) {
     e.preventDefault();
 
-    let res = await fetch("http://localhost:3000/Users");
-    let users = await res.json();
+    let userRes = await fetch("http://localhost:3000/Users");
+    let adminRes = await fetch("http://localhost:3000/Admin");
 
-    let foundUser = users.find(
-      (u) => u.email === email && u.password === password
+    let users = await userRes.json();
+    let admins = await adminRes.json();
+
+    let validUser = users.find(
+      (u) => u.email === user.email && u.password === user.password
     );
 
-    if (foundUser) {
-      alert("Login Successful");
-      localStorage.setItem("User", JSON.stringify(foundUser));
-      navigate("/");
-    } else {
-      alert("Invalid email or password");
+    let validAdmin = admins.find(
+      (a) => a.email === user.email && a.password === user.password
+    );
+
+    if (validAdmin) {
+      setAuth(true);
+      navigate("/admin");
+    } 
+    else if (validUser) {
+      setAuth(true);
+      navigate("/user");
+    } 
+    else {
+      alert("Invalid credentials");
     }
   }
 
   return (
-    <div className="login-container">
-      <div className="login-box">
-        <h2>Login</h2>
+    <form onSubmit={handleLogin}>
+      <input
+        name="email"
+        onChange={handleChange}
+        placeholder="Email"
+      />
 
-        <form onSubmit={handleLogin} className="login-form">
-          <input
-            type="text"
-            placeholder="Enter Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+      <input
+        name="password"
+        onChange={handleChange}
+        placeholder="Password"
+      />
 
-          <input
-            type="password"
-            placeholder="Enter Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    </div>
+      <button type="submit">Login</button>
+    </form>
   );
 }

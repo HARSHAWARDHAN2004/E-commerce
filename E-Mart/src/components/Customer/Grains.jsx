@@ -7,7 +7,7 @@ export default function Grains() {
 
   const { products } = useContext(AllProductCon)
 
-
+  // Filter only Grains
   const grainsData = products.filter(item => item.category === "Grains")
 
   async function addToHistory(product) {

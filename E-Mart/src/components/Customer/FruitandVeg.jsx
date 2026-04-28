@@ -7,7 +7,7 @@ export default function FruitandVeg() {
 
   const { products } = useContext(AllProductCon)
 
- 
+  //  Filter Fruits & Vegetables
   const fruitsData = products.filter(
     item => item.category === "FruitsVegetables"
   )

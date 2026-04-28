@@ -27,6 +27,7 @@ export default function Clothes() {
     }
   }
 
+ 
   let clothesData = products.filter(
     (item) => item.category === "Clothes"
   )

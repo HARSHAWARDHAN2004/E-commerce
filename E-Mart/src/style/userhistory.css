@@ -1,78 +1,148 @@
+/* PAGE */
 .history-container {
-  padding: 20px;
-  background-color: #f5f7fb;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #f6f9fc, #eef3f8);
   min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
+
+/* TITLE */
 .history-title {
   text-align: center;
   font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #222;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #1f1f1f;
+  letter-spacing: 0.5px;
 }
 
-/* list wrapper */
+
+/* GRID */
 .history-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
-/* card */
+
+/* CARD */
 .history-card {
-  width: 280px;
-  background-color: white;
-  border-radius: 12px;
+  background: #ffffff;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
 }
 
+
+/* HOVER EFFECT */
 .history-card:hover {
-  transform: scale(1.03);
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
 }
 
-/* image */
+
+/* IMAGE */
 .history-card img {
   width: 100%;
-  height: 180px;
+  height: 190px;
   object-fit: cover;
+  transition: transform 0.35s ease;
 }
 
-/* details */
+.history-card:hover img {
+  transform: scale(1.08);
+}
+
+
+/* DETAILS */
 .history-details {
-  padding: 15px;
+  padding: 16px;
 }
 
+
+/* TITLE */
 .history-details h3 {
-  margin: 5px 0;
-  font-size: 18px;
+  margin: 6px 0;
+  font-size: 17px;
   color: #111;
+  font-weight: 600;
 }
 
+
+/* SUBTEXT */
 .history-details h4 {
   margin: 0;
-  font-size: 14px;
-  color: #666;
+  font-size: 13px;
+  color: #777;
 }
 
+
+/* TEXT */
 .history-details p {
-  margin: 4px 0;
+  margin: 5px 0;
   font-size: 14px;
   color: #444;
 }
 
-/* status styles */
-.history-details p:last-child {
-  font-weight: bold;
+
+/* PRICE */
+.history-details .price {
+  font-weight: 700;
+  color: #16a34a;
 }
 
-.history-details p:last-child:contains("Delivered") {
-  color: green;
+
+/* STATUS BADGE (USE CLASS IN JSX) */
+.status {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
 }
 
-.history-details p:last-child:contains("Pending") {
-  color: orange;
+
+/* STATUS COLORS */
+.status.delivered {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+}
+
+.status.pending {
+  background: rgba(251, 146, 60, 0.15);
+  color: #fb923c;
+}
+
+.status.cancelled {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+
+/* OPTIONAL BADGE */
+.history-card::before {
+  content: "Order";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .history-title {
+    font-size: 24px;
+  }
 }

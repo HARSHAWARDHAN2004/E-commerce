@@ -18,7 +18,7 @@
     },
     {
       "id": "1776434558853",
-      "name": "KOTTY Women Solid Puffer Jacket",
+      "name": "KOTTY Women  Jacket",
       "price": 52006,
       "rating": 4,
       "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/6/q/a/s-1-no-kttpufferjacket137-kotty-original-imah7d27skgzrnzg.jpeg?q=70",
@@ -319,6 +319,13 @@
       "rating": 4.4,
       "image": "https://m.media-amazon.com/images/I/71oFyO3BMiL._AC_UF894,1000_QL80_.jpg",
       "category": "Grains"
+    },
+    {
+      "id": "Y8gcxBu_5Xg",
+      "name": "KOTTY Women Solid Puffer Jacket",
+      "price": 52330,
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/watch/s/c/1/1-2025-men-s-luxury-black-classic-wristwatch-19-fanish-fashion-original-imahg87hyvszhfge.jpeg?q=70",
+      "category": "Grains"
     }
   ],
   "Orders": [
@@ -331,11 +338,19 @@
       "status": "Placed"
     },
     {
-      "id": "uGVZIR_nvYc",
-      "name": "Rice",
-      "price": 60,
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPzK7PhZuQlU2kOKjo8_7TASVqH6TtwFU5HrBq_8L3Kg23J-uDp3H71zv7mizJA24ppH5Y3yQzYg8idBB0Q3Y3niDqIg-Fm8q8QS7HO3zV5Ekcyp2m2RDRrvN2HI4tg89o_z9XSw&usqp=CAc.",
-      "time": "4/19/2026, 7:01:16 PM",
+      "id": "a7jKilt2210",
+      "name": "iphone",
+      "price": 150000,
+      "image": "https://s.alicdn.com/@sc04/kf/H75373ed3c5f34019bc16273fa95b69a6L/Original-I16-Phone.jpg",
+      "time": "4/18/2026, 8:27:31 AM",
+      "status": "Placed"
+    },
+    {
+      "id": "UkgYXV4ui70",
+      "name": "Laptop",
+      "price": 75000,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMF6empznXfJrj6wtfspcViV69ug38x5RBQ&s",
+      "time": "4/28/2026, 10:59:16 AM",
       "status": "Placed"
     }
   ],
@@ -377,13 +392,6 @@
       "password": "asdfgh",
       "cart": [],
       "id": "HI2c3yymaoA"
-    },
-    {
-      "name": "Piyush",
-      "email": "piyush@gmail.com",
-      "password": "zxcvb",
-      "cart": [],
-      "id": "I2BBUBbpOPk"
     }
   ],
   "Admin": [
@@ -484,27 +492,12 @@
       "time": "4/18/2026, 4:18:51 PM"
     },
     {
-      "id": "oAM6Bd9Sb7U",
-      "name": "Bluetooth Speaker",
-      "price": 2500,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVNyioguh69cR6n-eI-W9upwgA_Mp1xE5vw&s",
-      "time": "4/19/2026, 7:00:44 PM"
-    },
-    {
-      "id": "PuuT8w8RR98",
-      "name": "Rice",
-      "price": 60,
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPzK7PhZuQlU2kOKjo8_7TASVqH6TtwFU5HrBq_8L3Kg23J-uDp3H71zv7mizJA24ppH5Y3yQzYg8idBB0Q3Y3niDqIg-Fm8q8QS7HO3zV5Ekcyp2m2RDRrvN2HI4tg89o_z9XSw&usqp=CAc.",
-      "time": "4/19/2026, 7:01:07 PM"
-    },
-    {
-      "id": "y-_3LsbA0h4",
-      "name": "Basmati Rice",
-      "price": 120,
-      "rating": 4.6,
-      "image": "https://dookan.com/cdn/shop/files/India_Gate_Premium_Basmati_Rice_1kg_-500px_2_8aaad10b-14e8-498a-a547-e01e9f3194db.png?v=1755865087&width=1445",
-      "category": "Grains",
-      "time": "4/19/2026, 7:25:53 PM"
+      "id": "Vx92ci4Ajl0",
+      "name": "Laptop",
+      "price": 75000,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMF6empznXfJrj6wtfspcViV69ug38x5RBQ&s",
+      "quantity": 1,
+      "time": "4/28/2026, 10:32:36 AM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

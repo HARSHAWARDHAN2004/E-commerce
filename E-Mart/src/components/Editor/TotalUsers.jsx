@@ -13,7 +13,7 @@ export default function Users() {
     setUsers(data);
   }
 
-  // ✅ DELETE USER FUNCTION
+  //  DELETE USER FUNCTION
   async function deleteUser(id) {
     await fetch(`http://localhost:3000/Users/${id}`, {
       method: "DELETE",

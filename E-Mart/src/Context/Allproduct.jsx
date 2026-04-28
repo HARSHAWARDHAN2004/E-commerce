@@ -14,9 +14,9 @@ export default function AllProductProvider({ children }) {
       let res = await fetch("http://localhost:3000/AllProduct");
       let data = await res.json();
 
-      console.log("API:", data); // ✅ already array
+      console.log("API:", data); 
 
-      // 🔥 JUST SET DIRECTLY
+      
       setProducts(data);
 
     } catch (error) {
